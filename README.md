@@ -1,6 +1,5 @@
 [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/PrathmeshSadake/prathmeshsadake.github.io) 
 
-[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/PrathmeshSadake/prathmeshsadake.github.io) 
 
 ## Contributing
 :loudspeaker:  **Any and all contributions, issues, features and tips are welcome.**
