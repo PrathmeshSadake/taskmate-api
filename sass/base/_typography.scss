@@ -24,5 +24,24 @@
   font-size: 1.6rem;
   line-height: 1.7rem;
   text-transform: uppercase;
+  animation-name: moveInBottom;
+  animation-duration: 4s;
 }
 
+.heading-secondary {
+  font-size: 3.5rem;
+  font-weight: 700;
+  background-image: linear-gradient(to left, #ffffff, #000033);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 0.8rem;
+  word-spacing: 1.5rem;
+  animation-name: moveInBottom;
+  animation-duration: 3s;
+  transition: all;
+
+  &:hover {
+    transform: skewX(-20deg);
+  }
+}
