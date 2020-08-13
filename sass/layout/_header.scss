@@ -5,7 +5,7 @@
       rgba($color-primary-medium, 0.2),
       rgba($color-primary-dark, 0.9)
     ),
-    url("../img/header-banner.jpg");
+    url("../img/banner.jpg");
   background-position: top;
   background-size: cover;
   position: relative;
@@ -29,5 +29,4 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-
 }
