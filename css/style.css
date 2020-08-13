@@ -29,17 +29,48 @@ body {
   text-decoration: none;
   font-size: 1.6rem;
   line-height: 1.7rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  animation-name: moveInBottom;
+  animation-duration: 4s; }
 
 .heading-secondary {
+  font-size: 3.5rem;
+  font-weight: 700;
+  background-image: linear-gradient(to left, #ffffff, #000033);
+  -webkit-background-clip: text;
+  color: transparent;
   text-transform: uppercase;
-  font-size: 2.5rem;
-  line-height: 2.6rem;
-  margin: 5rem; }
+  letter-spacing: 0.8rem;
+  word-spacing: 1.5rem;
+  animation-name: moveInBottom;
+  animation-duration: 3s;
+  transition: all; }
+  .heading-secondary:hover {
+    transform: skewX(-20deg); }
+
+@keyframes moveInBottom {
+  0% {
+    transform: translateY(10rem);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-s {
+  margin-bottom: 3rem; }
+
+.u-margin-bottom-m {
+  margin-bottom: 6rem; }
+
+.u-margin-bottom-l {
+  margin-bottom: 8rem; }
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right, rgba(0, 0, 85, 0.2), rgba(0, 0, 51, 0.9)), url("../img/header-banner.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 85, 0.2), rgba(0, 0, 51, 0.9)), url("../img/banner.jpg");
   background-position: top;
   background-size: cover;
   position: relative;
@@ -71,4 +102,5 @@ body {
 .section-about {
   height: 75vh;
   background-color: #DCDCDC;
+  padding: 25rem;
   margin-top: -20rem; }
