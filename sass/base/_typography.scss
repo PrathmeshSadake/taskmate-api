@@ -21,9 +21,8 @@
 
 .btn {
   text-decoration: none;
-  font-size: 1.6rem;
-  line-height: 1.7rem;
-  word-spacing: 5px;
+  font-size: 2rem;
+  line-height: 2.1rem;
   text-transform: uppercase;
   animation-name: moveInBottom;
   animation-duration: 4s;
@@ -32,7 +31,7 @@
 .heading-secondary {
   font-size: 3.5rem;
   font-weight: 700;
-  background-image: linear-gradient(to left, #ffffff, #000033);
+  background-image: linear-gradient(to left, #0000ff, #000033);
   -webkit-background-clip: text;
   color: transparent;
   text-transform: uppercase;
