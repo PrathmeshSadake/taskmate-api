@@ -26,6 +26,7 @@ body {
     letter-spacing: 0.45rem; }
 
 .btn {
+  font-family: "Red Rose", cursive;
   text-decoration: none;
   font-size: 2rem;
   line-height: 2.1rem;
@@ -34,19 +35,43 @@ body {
   animation-duration: 4s; }
 
 .heading-secondary {
-  font-size: 3.5rem;
+  font-family: "Red Rose", cursive;
+  font-size: 4.5rem;
   font-weight: 700;
   background-image: linear-gradient(to left, #0000ff, #000033);
   -webkit-background-clip: text;
   color: transparent;
   text-transform: uppercase;
+  text-decoration: underline #0000ff;
+  margin-top: 5rem;
   letter-spacing: 0.8rem;
   word-spacing: 1.5rem;
-  animation-name: moveInBottom;
-  animation-duration: 3s;
   transition: all; }
   .heading-secondary:hover {
-    transform: skewX(-20deg); }
+    transform: skewX(-20deg);
+    text-decoration: underline #000033; }
+
+.heading-tertiary {
+  font-family: "Red Rose", cursive;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #444343; }
+
+.about {
+  font-size: 1.7rem;
+  color: gray;
+  font-weight: 400;
+  margin-top: 1rem;
+  margin-bottom: 3.5rem; }
+
+.btn-blue {
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 1.7rem;
+  text-decoration: none; }
+  .btn-blue:hover {
+    color: #000033; }
 
 @keyframes moveInBottom {
   0% {
@@ -67,6 +92,9 @@ body {
 
 .u-margin-bottom-l {
   margin-bottom: 8rem; }
+
+.u-margin-top-m {
+  margin-bottom: 5rem; }
 
 .header {
   height: 95vh;
@@ -125,8 +153,39 @@ body {
   padding: 1.7rem 5rem;
   border-radius: 10rem; }
 
+.button-secondary {
+  margin-top: 2rem; }
+
+.btn-blue {
+  background-color: #0000ff;
+  padding: 0.5rem 0.8rem; }
+
+.image-box {
+  position: relative; }
+
+.image-box__img {
+  position: absolute;
+  box-shadow: 0 2.4rem 4rem rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  z-index: 0;
+  transition: all 0.4s;
+  outline-offset: 2rem; }
+  .image-box__img--1 {
+    height: 45rem; }
+  .image-box__img--2 {
+    width: 80%;
+    top: 28rem;
+    left: 3rem; }
+  .image-box__img:hover {
+    outline: 1.5rem solid #000033;
+    transform: scale(1.05);
+    box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+    z-index: 20; }
+  .image-box__img:hover .image-box__img__img:not(:hover) {
+    transform: scale(0.55); }
+
 .section-about {
   height: 75vh;
-  background-color: #dcdcdc;
+  background-color: #e9e9e9;
   padding: 25rem;
   margin-top: -20rem; }
