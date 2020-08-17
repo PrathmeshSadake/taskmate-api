@@ -20,6 +20,7 @@
 }
 
 .btn {
+  font-family: "Red Rose", cursive;
   text-decoration: none;
   font-size: 2rem;
   line-height: 2.1rem;
@@ -29,19 +30,48 @@
 }
 
 .heading-secondary {
-  font-size: 3.5rem;
+  font-family: "Red Rose", cursive;
+  font-size: 4.5rem;
   font-weight: 700;
   background-image: linear-gradient(to left, #0000ff, #000033);
   -webkit-background-clip: text;
   color: transparent;
   text-transform: uppercase;
+  text-decoration: underline $color-tertiary-dark;
+  margin-top: 5rem;
   letter-spacing: 0.8rem;
   word-spacing: 1.5rem;
-  animation-name: moveInBottom;
-  animation-duration: 3s;
   transition: all;
 
   &:hover {
     transform: skewX(-20deg);
+    text-decoration: underline $color-primary-dark;
+  }
+}
+
+.heading-tertiary {
+  font-family: "Red Rose", cursive;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(68, 67, 67);
+}
+
+.about {
+  font-size: 1.7rem;
+  color: gray;
+  font-weight: 400;
+  margin-top: 1rem;
+  margin-bottom: 3.5rem;
+}
+
+.btn-blue {
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 1.7rem;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-primary-dark;
   }
 }
