@@ -73,6 +73,21 @@ body {
   .btn-blue:hover {
     color: #000033; }
 
+.heading-secondary--2 {
+  font-family: "Red Rose", cursive;
+  font-size: 4.5rem;
+  font-weight: 700;
+  background-image: linear-gradient(to left, #fff, #ef3);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+  margin-top: 5rem;
+  letter-spacing: 0.8rem;
+  word-spacing: 1.5rem;
+  width: 97%; }
+  .heading-secondary--2:hover {
+    transform: skewX(-20deg); }
+
 @keyframes moveInBottom {
   0% {
     transform: translateY(10rem);
@@ -94,7 +109,7 @@ body {
   margin-bottom: 8rem; }
 
 .u-margin-top-m {
-  margin-bottom: 5rem; }
+  margin-top: 5rem; }
 
 .header {
   height: 95vh;
@@ -102,7 +117,8 @@ body {
   background-position: top;
   background-size: cover;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  z-index: 1; }
   .header__logo-box {
     position: absolute;
     top: 3rem;
@@ -184,8 +200,21 @@ body {
   .image-box__img:hover .image-box__img__img:not(:hover) {
     transform: scale(0.55); }
 
+.wave {
+  position: absolute;
+  bottom: 52rem;
+  z-index: 2;
+  right: 0; }
+
 .section-about {
-  height: 45vh;
+  height: 85vh;
   background-color: #e9e9e9;
   padding: 25rem;
-  margin-top: -20rem; }
+  margin-top: -20rem;
+  position: relative; }
+
+.section-skills {
+  height: 55vh;
+  position: relative;
+  z-index: 4;
+  background-color: #000; }
