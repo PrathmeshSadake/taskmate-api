@@ -75,3 +75,21 @@
     color: $color-primary-dark;
   }
 }
+
+.heading-secondary--2 {
+  font-family: "Red Rose", cursive;
+  font-size: 4.5rem;
+  font-weight: 700;
+  background-image: linear-gradient(to left, #fff, #ef3);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+  margin-top: 5rem;
+  letter-spacing: 0.8rem;
+  word-spacing: 1.5rem;
+  width: 97%; //importtan or bottom scrollbar displays
+
+  &:hover {
+    transform: skewX(-20deg);
+  }
+}
