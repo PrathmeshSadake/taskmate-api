@@ -202,7 +202,7 @@ body {
 
 .wave {
   position: absolute;
-  bottom: 52rem;
+  bottom: 78rem;
   z-index: 2;
   right: 0; }
 
@@ -214,7 +214,8 @@ body {
   position: relative; }
 
 .section-skills {
-  height: 55vh;
+  height: 75vh;
   position: relative;
+  padding: 5rem;
   z-index: 4;
   background-color: #000; }
