@@ -1,114 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
-      rel="stylesheet"
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+
+    <!-- Bootstrap CSS -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@700&display=swap"
       rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"> -->
     <title>Prathmesh Sadake</title>
   </head>
   <body>
-    <header class="header">
-      <div class="header__logo-box">
-        <a
-          href="https://www.github.com/PrathmeshSadake/prathmeshsadake.github.io"
-          target="_blank"
+    <header class="navigation">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Explore </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          <img src="img/github-light.png" alt="logo" class="header__logo" />
-        </a>
-      </div>
-      <div class="header__text-box">
-        <h1 class="heading-primary">
-          <span class="heading-primary--main">
-            Welcome
-          </span>
-          <span class="heading-primary--sub">
-            Myself Prathmesh
-          </span>
-        </h1>
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <div class="header__button-primary">
-          <a class="btn btn-white" href="#section-about">About Me</a>
-        </div>
-      </div>
-    </header>
-    <main>
-      <section class="section-about">
-        <div id="section-about" class="u-center-text" class="u-margin-bottom-m">
-          <h2 class="heading-secondary">
-            About me
-          </h2>
-        </div>
-        <div class="row">
-          <div class="col-1-of-2">
-            <h3 class="heading-tertiary">something about me</h3>
-            <p class="about">
-              Hi, I’m Prathmesh, a Frontend Web Developer & Computer Science
-              Engineer who loves building webpages and Software products. My
-              strengths are my attitude that I like to take challenges that I
-              CAN do it, self motivated person, self disciplined I am a good
-              team player as well as has a good ability to lead the team. I can
-              adopt to any kind of environment. I am a good listener and quick
-              learner. My weakness is I can not tolerate any leniency in work My
-              short term goal is I want a such a platform where I can grow my
-              career along with the organization growth like yours and. My Long
-              term goal is I want to be one of the reason for the success of the
-              organization and I want to see your organization as a bench mark
-              to other organizations.
-            </p>
-
-            <h3 class="heading-tertiary">Technologies i have worked on</h3>
-            <p class="about">
-              I’d love to combine my passion for learning and developing with my
-              software development skills to continue building personalized
-              products for people. I am a frontend developer familier with
-              technologies like
-              <b
-                >Html-5, Cascading Style Sheets, Sass, Bootstrap, Node.js,
-                React.js.</b
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
               >
-            </p>
-            <div class="button-secondary">
-              <a href="#skills-heading" class="btn-blue">Learn More &rarr;</a>
-            </div>
-          </div>
-          <div class="col-1-of-2">
-            <div class="image-box">
-              <img
-                src="./img/programmer-1.jpg"
-                alt="Programmer Image"
-                class="image-box__img image-box__img--1"
-              />
-              <img
-                src="./img/prorammer-2.jpg"
-                alt="Programmer Image"
-                class="image-box__img image-box__img--2"
-              />
-            </div>
-          </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="container section-home">
+        <img
+          src="images/mobile-app-dev.png"
+          class="img-fluid rounded mx-auto d-block"
+          alt="section-home-image"
+        />
+        <div class="text-center home-text">
+          <h1 class="heading-primary">Software Developer</h1>
+          <p>
+            Hi, I’m Prathmesh Sadake a Web Developer & Computer Science Engineer
+            who loves building webpages and Software products .
+          </p>
+          <button type="button" class="btn btn-secondary">About me</button>
         </div>
       </section>
-      <section class="section-skills">
-        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 200">
-          <path
-            fill="#000"
-            fill-opacity="1"
-            d="M0,64L48,90.7C96,117,192,171,288,165.3C384,160,480,96,576,64C672,32,768,32,864,58.7C960,85,1056,139,1152,133.3C1248,128,1344,64,1392,32L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-          ></path>
-        </svg>
-        <div id="skills-heading" class="u-center-text" class="u-margin-bottom-m">
-          <h2 class="heading-secondary--2">
-            Technologies I have worked on
-          </h2>
+
+      <section class="container about">
+        <p class="text-center text-about">
+          Hi, I’m Prathmesh, a Frontend Web Developer & Computer Science
+          Engineer who loves building webpages and Software products. I can
+          adopt to any kind of environment. I am a good listener and quick
+          learner. I am a frontend developer familier with technologies like
+          Html-5, Cascading Style Sheets, Sass, Bootstrap, Node.js, React.js.
+        </p>
+      </section>
+
+      <section class="skills">
+        <div class="container">
+          <div class="text-center home-text">
+            <h1 class="heading-primary">SKILLS</h1>
+          </div>
+          <div class="card-deck">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This card has supporting text below as a natural lead-in to
+                  additional content.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This card has even longer
+                  content than the first to show that equal height action.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
