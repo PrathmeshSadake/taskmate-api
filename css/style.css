@@ -1,0 +1,96 @@
+/* #F7F4D4
+#FDED2A
+#700CBC
+#7114B8
+#210934 */
+
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: "Acme", sans-serif;
+  font-family: "Lato", sans-serif;
+}
+
+html {
+  font-size: 100%;
+}
+
+.section-home {
+  height: 63rem;
+  background-color: #fded2a;
+}
+.home-svg {
+  padding-top: 3rem;
+  width: 50rem;
+  height: 50rem;
+}
+
+.heading-primary {
+  padding-top: 4rem;
+  text-align: center;
+}
+
+p {
+  font-family: "Acme", sans-serif;
+  font-size: 1.5rem;
+}
+
+.about {
+  background-color: #f7f4d4;
+  height: 60rem;
+}
+
+.about-svg--1 {
+  width: 50rem;
+  height: 50rem;
+  padding-top: 4rem;
+}
+.about-svg--1:hover {
+  transform: scale(1.05);
+}
+
+.about-svg--2 {
+  width: 50rem;
+  height: 50rem;
+  padding-top: 6rem;
+}
+.about-svg--2:hover {
+  transform: scale(1.05);
+}
+
+.text-about {
+  padding-top: 3rem;
+}
+.skills {
+  background-color: #700cbc;
+  height: 60rem;
+}
+.heading-secondary {
+  padding: 4rem 0;
+  text-align: center;
+  color: #fded2a;
+}
+.card-body {
+  background-color: #f7f4d4;
+}
+.card-title {
+  color: #210934;
+}
+.card-text {
+  color: #000;
+}
+
+.section-footer {
+  height: 4rem;
+  background-color: #210934;
+  color: white;
+}
+.footer-text {
+  padding-top: 0.7rem;
+}
+
+@media screen and (max-width: 600px) {
+    .skills{
+        height: 125rem;
+    }
+  }
