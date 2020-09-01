@@ -1,9 +1,3 @@
-/* #F7F4D4
-#FDED2A
-#700CBC
-#7114B8
-#210934 */
-
 * {
   padding: 0%;
   margin: 0%;
@@ -17,17 +11,19 @@ html {
 
 .section-home {
   height: 63rem;
-  background-color: #fded2a;
+  background-color: #1f2833;
+  color: #c5c6c7;
 }
 .home-svg {
   padding-top: 3rem;
-  width: 50rem;
-  height: 50rem;
+  width: 40rem;
+  height: 40rem;
 }
 
 .heading-primary {
   padding-top: 4rem;
   text-align: center;
+  color: #66f6f1;
 }
 
 p {
@@ -36,14 +32,21 @@ p {
 }
 
 .about {
-  background-color: #f7f4d4;
+  background-color: #c5c6c7;
   height: 60rem;
+  color: #2e554e;
+}
+
+.heading-secondary {
+  padding-top: 4rem;
+  text-align: center;
+  color: #1f2833;
 }
 
 .about-svg--1 {
   width: 50rem;
   height: 50rem;
-  padding-top: 4rem;
+  padding-top: 10rem;
 }
 .about-svg--1:hover {
   transform: scale(1.05);
@@ -62,35 +65,72 @@ p {
   padding-top: 3rem;
 }
 .skills {
-  background-color: #700cbc;
+  background-color: #66fcf1;
   height: 60rem;
 }
 .heading-secondary {
-  padding: 4rem 0;
+  font-family: "Acme", sans-serif;
+  text-transform: capitalize;
+  padding-top: 4rem;
   text-align: center;
-  color: #fded2a;
+  color: #0b0c10;
+  word-spacing: 3px;
 }
 .card-body {
-  background-color: #f7f4d4;
+  background-color: #f2f2f2;
 }
 .card-title {
-  color: #210934;
+  color: #0b0c10;
 }
 .card-text {
-  color: #000;
+  color: #0b0c10;
+}
+.card-deck {
+  /* padding: 5rem 5rem; */
+  width: 100%;
+}
+
+.section-dev {
+  background-color: #1f2833;
+  height: 55rem;
+}
+.image-dev {
+  padding: 5rem 0rem;
+  height: 50rem;
+  width: 50rem;
+}
+.arrow {
+  padding-left: 1.2rem;
 }
 
 .section-footer {
-  height: 4rem;
-  background-color: #210934;
-  color: white;
+  height: 5rem;
+  text-transform: capitalize;
+  background-color: #0b0c10;
+  color: #f2f2f2;
 }
 .footer-text {
-  padding-top: 0.7rem;
+  padding-top: 0.8rem;
+  word-spacing: 3px;
 }
 
 @media screen and (max-width: 600px) {
-    .skills{
-        height: 125rem;
-    }
+  html {
+    font-size: 80%;
   }
+
+  .about {
+    height: 50rem;
+  }
+  .skills {
+    height: 120rem;
+  }
+
+  .card-deck {
+    padding: 1rem 2rem;
+  }
+  .section-dev {
+    background-color: #1f2833;
+    height: 50rem;
+  }
+}
