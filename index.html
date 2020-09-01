@@ -8,6 +8,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -15,12 +16,13 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Lato:wght@900&family=Pacifico&display=swap" rel="stylesheet">
     <!-- <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"> -->
     <title>Prathmesh Sadake</title>
   </head>
   <body>
     <header class="navigation">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-custom navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Explore </a>
         <button
           class="navbar-toggler"
@@ -59,10 +61,11 @@
     </header>
 
     <main>
-      <section class="container section-home">
-        <img
-          src="images/mobile-app-dev.png"
-          class="img-fluid rounded mx-auto d-block"
+      <section class="section-home">
+        <div class="container">
+          <img
+          src="images/home.svg"
+          class="home-svg img-fluid rounded mx-auto d-block"
           alt="section-home-image"
         />
         <div class="text-center home-text">
@@ -71,11 +74,23 @@
             Hi, I’m Prathmesh Sadake a Web Developer & Computer Science Engineer
             who loves building webpages and Software products .
           </p>
-          <button type="button" class="btn btn-secondary">About me</button>
+          <button type="button" class="btn btn-dark">About me</button>
         </div>
       </section>
 
-      <section class="container about">
+      <section class="about">
+        <div class="container">
+          <h1 class="heading-primary">About me and Technologies I have worked on </h1>
+            <div class="row">
+              <div class="col"><img
+                src="images/about-1.svg"
+                class="about-svg--1 img-fluid rounded mx-auto d-block"
+                alt="section-about-image"></div>
+              <div class="col"><img
+                src="images/about-2.svg"
+                class="about-svg--2 img-fluid rounded mx-auto d-block"
+                alt="section-about-image"></div>
+              </div>
         <p class="text-center text-about">
           Hi, I’m Prathmesh, a Frontend Web Developer & Computer Science
           Engineer who loves building webpages and Software products. I can
@@ -83,19 +98,20 @@
           learner. I am a frontend developer familier with technologies like
           Html-5, Cascading Style Sheets, Sass, Bootstrap, Node.js, React.js.
         </p>
+        </div>
       </section>
 
       <section class="skills">
         <div class="container">
           <div class="text-center home-text">
-            <h1 class="heading-primary">SKILLS</h1>
+            <h1 class="heading-secondary">SKILLS</h1>
           </div>
           <div class="card-deck">
             <div class="card">
               <img
                 src="images/mern-logo.jpg"
                 class="card-img-top"
-                alt="mern-stack-logoo"
+                alt="mern-stack-logo"
               />
               <div class="card-body">
                 <h5 class="card-title">MERN Stack Web Development</h5>
@@ -151,15 +167,16 @@
           class="img-fluid rounded mx-auto d-block"
           alt="developer-image"
         />
-        <button type="button" class=" container btn btn-outline-secondary">Github</button>
+        <button type="button" class=" container btn btn-outline-secondary">View Me on Github</button>
       </section>
-      <section class="footer">
+
+      <footer class="section-footer">
         <div class="container">
-          <div class="text-center container">
+          <div class="footer-text text-center container">
             <p>Made with &#128151; By Prathmesh Sadake</p>
           </div>
         </div>
-      </section>
+      </footer>
     </main>
 
     <!-- Optional JavaScript -->
