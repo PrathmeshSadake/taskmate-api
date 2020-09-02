@@ -89,7 +89,8 @@ p {
 }
 .card-deck {
   /* padding: 5rem 5rem; */
-  width: 100%;
+  border: #c5c6c7;
+  
 }
 
 .section-dev {
@@ -131,9 +132,6 @@ p {
     height: 120rem;
   }
 
-  .card-deck {
-    padding: 1rem 2rem;
-  }
   .section-dev {
     background-color: #1f2833;
     height: 50rem;
