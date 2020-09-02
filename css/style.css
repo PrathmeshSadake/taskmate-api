@@ -10,9 +10,10 @@ html {
 }
 
 .section-home {
-  height: 63rem;
+  height: 75rem;
   background-color: #1f2833;
   color: #c5c6c7;
+  clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%)
 }
 .home-svg {
   padding-top: 3rem;
@@ -33,12 +34,13 @@ p {
 
 .about {
   background-color: #c5c6c7;
-  height: 60rem;
+  height: 90rem;
   color: #2e554e;
+  margin-top: -35rem;
 }
 
 .heading-secondary {
-  padding-top: 4rem;
+  padding-top: 35rem;
   text-align: center;
   color: #1f2833;
 }
@@ -55,7 +57,7 @@ p {
 .about-svg--2 {
   width: 50rem;
   height: 50rem;
-  padding-top: 6rem;
+  padding-top: 3rem;
 }
 .about-svg--2:hover {
   transform: scale(1.05);
@@ -68,10 +70,10 @@ p {
   background-color: #66fcf1;
   height: 60rem;
 }
-.heading-secondary {
+.heading-secondary-2 {
   font-family: "Acme", sans-serif;
   text-transform: capitalize;
-  padding-top: 4rem;
+  padding: 4rem 0;
   text-align: center;
   color: #0b0c10;
   word-spacing: 3px;
@@ -120,7 +122,10 @@ p {
   }
 
   .about {
-    height: 50rem;
+    height: 100rem;
+  }
+  .heading-secondary {
+    padding-top: 45rem;
   }
   .skills {
     height: 120rem;
