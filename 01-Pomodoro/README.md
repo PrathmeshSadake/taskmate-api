@@ -1,7 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Stop Watch Timer App made with React.js using hooks.
+
+![Finished App](https://github.com/PrathmeshSadake/reactify/blob/master/01-Pomodoro/screenshots/screen_record.gif)
 
 ## Available Scripts
-
 In the project directory, you can run:
 
 ### `yarn start`
