@@ -1,6 +1,6 @@
 # Pomodoro - Stop Watch Timer
 
-![Finished App](https://github.com/PrathmeshSadake/reactify/blob/master/01-Pomodoro/screenshots/screen_record.gif)
+![Finished App](https://github.com/PrathmeshSadake/reactify/blob/master/Pomodoro/screenshots/screen_record.gif)
 
 ### Created by : [Prathmesh Sadake](https://github.com/PrathmeshSadake)
 <hr>
