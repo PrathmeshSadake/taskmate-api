@@ -7,6 +7,7 @@ const UserSchema = mongoose.Schema({
   email: {
     type: String,
     required: true,
+    unique: true, // prevent same email account creation
     trim: true, //removes whitespace from start and end is there.
     lowercase: true, //converts to lowercase
     validate(value) {
@@ -36,7 +37,21 @@ const UserSchema = mongoose.Schema({
   },
 });
 
-// Middleware
+UserSchema.statics.findByCredentials = async (email, password) => {
+  const user = await User.findOne({ email: email });
+  if (!user) {
+    throw new Error("Unable to login");
+  }
+
+  const isMatched = await bcrypt.compare(password, user.password);
+  if (!isMatched) {
+    throw new Error("Unable to login");
+  }
+
+  return user;
+};
+
+// Middleware to Hash the plain text password
 UserSchema.pre("save", async function (next) {
   const user = this;
   if (user.isModified("password")) {
