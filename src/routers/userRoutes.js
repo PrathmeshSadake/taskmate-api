@@ -17,7 +17,6 @@ router.post("/users", async (req, res) => {
 
 router.post("/users/login", async (req, res) => {
   try {
-    // findByCredentials is created in user.js model file.
     const user = await User.findByCredentials(
       req.body.email,
       req.body.password
@@ -26,6 +25,28 @@ router.post("/users/login", async (req, res) => {
     res.send({ user: user, token: token });
   } catch (error) {
     res.status(400).send();
+  }
+});
+
+router.post("/users/logout", auth, async (req, res) => {
+  try {
+    req.user.tokens = req.user.tokens.filter((token) => {
+      return token.token !== req.token;
+    });
+    await req.user.save();
+    res.send();
+  } catch (error) {
+    res.status(500).send();
+  }
+});
+
+router.post("/users/logoutAll", auth, async (req, res) => {
+  try {
+    req.user.tokens = [];
+    await req.user.save();
+    res.send();
+  } catch (error) {
+    res.status(500).send();
   }
 });
 
@@ -64,10 +85,6 @@ router.patch("/users/:id", async (req, res) => {
     updateKeys.forEach((update) => {
       user[update] = req.body[update];
     });
-    // const user = await User.findByIdAndUpdate(_id, req.body, {
-    //   new: true,
-    //   runValidators: true,
-    // });
     if (!user) {
       return res.status(404).send();
     }
