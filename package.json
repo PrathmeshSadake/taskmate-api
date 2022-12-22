@@ -22,7 +22,7 @@
     "@sendgrid/mail": "^7.4.6",
     "bcrypt": "^5.0.1",
     "express": "^4.17.1",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "mongodb": "^3.6.9",
     "mongoose": "^5.13.1",
     "multer": "^1.4.3",
